@@ -1,0 +1,66 @@
+// function
+.Fl(){
+    float: left;
+}
+.Fr(){
+    float: right;
+}
+.Hide(){
+  display: none;
+}
+
+.TextOverflow(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TextareaOverflow(@num:2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @num;
+    -webkit-box-orient: vertical;
+}
+
+.Center(){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.CenterY(){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.CenterX(){
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.ClearFix() {
+    zoom: 1;
+    &:after {
+        content: "";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+}

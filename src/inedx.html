@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自用React框架</title>
+    <script>
+        function layout() {
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 750) deviceWidth = 750;//根据设计图750可调
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        layout();
+        window.onresize = function () { layout(); }
+    </script>
+    <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js"></script>
+    <script>
+        var vConsole = new VConsole();
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    
+</body>
+</html>
