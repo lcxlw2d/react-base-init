@@ -25,6 +25,5 @@ yarn prod
 - 删除原dist目录
 - 执行yarn prod
 - 把dist目录中的img文件夹移动到同级的css文件夹下
-- 把td-h5-website-sdk-3.1.2.js放到dist/js目录下
 - 在index.html同级目录新建img文件夹,存放img标签src的图片文件
 - 部署代码
